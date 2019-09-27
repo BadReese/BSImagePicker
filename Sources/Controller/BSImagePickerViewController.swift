@@ -49,6 +49,12 @@ open class BSImagePickerViewController : UINavigationController {
     @objc open var defaultSelections: PHFetchResult<PHAsset>?
     
     /**
+     Default selections of PHAssets, use this to keep user selection order.
+     if this is not null, defaultSelections will be ignored
+     */
+    @objc open var defaultAssets: [PHAsset]?
+    
+    /**
      Fetch results.
      */
     
@@ -97,9 +103,16 @@ open class BSImagePickerViewController : UINavigationController {
     
     @objc lazy var photosViewController: PhotosViewController = {
         var selections: [PHAsset] = []
-        defaultSelections?.enumerateObjects({ (asset, idx, stop) in
-            selections.append(asset)
-        })
+        if defaultAssets != nil {
+            for asset in defaultAssets! {
+                selections.append(asset)
+            }
+        } else {
+            defaultSelections?.enumerateObjects({ (asset, idx, stop) in
+                selections.append(asset)
+            })
+        }
+        
 
         let assetStore = AssetStore(assets: selections)
         let vc = PhotosViewController(fetchResults: self.fetchResults,
