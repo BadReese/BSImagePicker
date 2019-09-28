@@ -154,7 +154,7 @@
 		55BCF8E321D52CAE00386752 /* BSGridCollectionViewLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BSGridCollectionViewLayout.framework; sourceTree = "<group>"; };
 		55BCF8E621D52CE300386752 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		55BCF8E721D52CEC00386752 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		55BCF8E821D52CF600386752 /* BSImagePicker.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = BSImagePicker.podspec; sourceTree = "<group>"; };
+		55BCF8E821D52CF600386752 /* BSImagePickerFixOrder.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = BSImagePickerFixOrder.podspec; sourceTree = "<group>"; };
 		55BCF8E921D52CFE00386752 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		55BCF8EB21D52F3400386752 /* ImagePickerViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerViewTests.swift; sourceTree = "<group>"; };
 		55BCF8EC21D52F3400386752 /* ComposedDataSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposedDataSourceTests.swift; sourceTree = "<group>"; };
@@ -360,7 +360,7 @@
 			isa = PBXGroup;
 			children = (
 				55BCF8E921D52CFE00386752 /* Cartfile */,
-				55BCF8E821D52CF600386752 /* BSImagePicker.podspec */,
+				55BCF8E821D52CF600386752 /* BSImagePickerFixOrder.podspec */,
 			);
 			name = "Dependency Managers";
 			sourceTree = "<group>";
